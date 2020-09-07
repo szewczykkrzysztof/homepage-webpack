@@ -1,153 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta
-      property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
-    />
-
-    <!-- uncomment the line below to enable PWA  -->
-    <!-- <link rel="manifest" href="manifest.json" /> -->
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="pwa/apple-icon-180.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="167x167"
-      href="pwa/apple-icon-167.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="pwa/apple-icon-152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="pwa/apple-icon-120.png"
-    />
-
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-2732.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2732-2048.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2388.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2388-1668.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2224.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2224-1668.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1536-2048.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-1536.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2688.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2688-1242.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1125-2436.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2436-1125.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-828-1792.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1792-828.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2208.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2208-1242.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-750-1334.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1334-750.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-640-1136.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1136-640.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
+    <title>Strona główna</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
+
   <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+    <header class="header" id="top">
+      <img class="burger__menu burger--js" src="burger.png" alt="burger menu" />
+      <nav class="navigation navigation--js">
+        <a
+          class="navigation__link navigation__link--homepage navigation__link--active"
+          href="index.html"
+          >Strona główna</a
+        >
+        <a class="navigation__link" href="nauka-html.html">Nauka HTML</a>
+        <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
+        <a class="navigation__link" href="nauka-js.html">Nauka Javascript</a>
+        <a class="navigation__link" href="tools.html">Narzędzia</a>
+      </nav>
+    </header>
+    <main class="main">
+      <header class="main-heading">
+        <h1 class="actionHeading--js">Witam na na mojej stronie domowej</h1>
+      </header>
+      <button class="action--js">Zmień nagłowek</button>
+      <section class="about-me">
+        <img class="about-me__image" src="profil_slack.jpg" alt="Zdjęcie profilowe" />
+        <h2 class="about-me__heading">
+          Kim jestem
+        </h2>
+        <p class="about-me--js">
+          Nazywam się Krzysztof Szewczyk.<br />
+          Będą tutaj pojawiać się moje notatki związane z tworzeniem frontendu.
+        </p>
+        <p>Przejdź do <a href="#notatki">notatek</a></p>
+      </section>
+
+      <section id="notatki" class="notes">
+        <article class="notes__article">
+          <h2 class="notes__heading">Notatki z nauki front-endu</h2>
+          <h3 class="notes__article--heading">Warstwy strony internetowej</h3>
+          <p>
+            Dobra strona internetowa ma postać warstwową, z której każda ma swoje właściwości i
+            kompetencje. Najniższą warstwą jest treść, czyli całą zawartość która będzie widoczna
+            dla człowieka siedzącego przed ekranem.<br />
+            Kolejna to warstwa to semantyka HTML, czyli sposób prezentacji treści. Nad nią pojawia
+            się formatowanie, czyli style CSS. Na samej górze tej kanapki pojawia nam warstwa
+            interakcji czyli Javascript. Sprawa najważniejsza - czyli content Tym czego każdy z nas
+            szuka w czeluściach internetu jest treść. Bez niej nawet najładniejsze opakowanie
+            niewiele zmieni. A składają się na nią nie tylko same teksty, ale też nagłówki, linki,
+            formularze i cała gama multimediów. Wszystko to co jest nośnikiem informacji jest naszym
+            contentem. To właśnie ta zawartość ma przyciągnąć i zatrzymać odbiorcę na stronie.
+          </p>
+        </article>
+        <article class="notes__article">
+          <h3 class="notes__article--heading">HTML - co to takiego</h3>
+          <p>
+            Tym co trzyma w ryzach prezentowaną treść jest właśnie HTML, czyli HyperText Markup
+            Language. Ten język,dzięki któremu za pomocą odpowiednich znaczników opakowujemy i
+            rozmieszczamy content na ekranie naszych urządzeń.<br />
+            Każdy element jest opakowany klamrą z nazwą znacznika. Pierwsza klamra zawiera atrybuty,
+            które będzie przyjmował otagowany element, a druga jest klamrą zamykającą, która
+            sygnalizuje przeglądarce gdzie znajduje się jego koniec.<br />
+            Mówi się, że HTML jest językiem semantycznym, to znaczy “mający znaczenie”. Opakowując
+            treść znacznikami właśnie nadajemy jej znaczenie. Struktura pliku .html ma postać
+            szkieletu naszej strony i mieści się pomiędzy parą znaczników <b>html i /html</b>
+            Strona posiada jedną głowę, czyli parę
+
+            <b>head i /head</b>> oraz swoje ciało czyli wszystko to co mieści się pomiędzy
+
+            <b>body i /body</b>>.
+          </p>
+        </article>
+        <article class="notes__article">
+          <h3 class="notes__article--heading">CSS - czyli stylizowanie</h3>
+          <p>
+            Za “stylówkę” poszczególnych elementów strony odpowiada CSS, czyli Cascade Style Sheet.
+            To w nich będziemy definiować jak poszczególne elementy strony będą wyglądały na ekranie
+            i na wydrukach. Składnia CSS składa się z reguł. Jej budowa wygląda tak:
+          </p>
+          <p>
+            selektor { właściwość: wartość; }
+          </p>
+          <p>
+            Selektorem jest tutaj element dokumentu (nagłówek, akapit itd) Arkuszy stylów możemy
+            używać bezpośrednio w pliku html, ale czytelniej i lepiej jest to robić w osobnym
+            dokumencie z rozszerzeniem .css. W pliku html wstawiamy tylko linka do zewnętrznego
+            arkusza stylów.
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer class="footer">
+      Strona powstała w trakcie nauki kodowania stron WWW.
+      <a class="footer__link" href="#top">Wróć na górę</a>
+    </footer>
+    <script src="main.js"></script>
   </body>
 </html>

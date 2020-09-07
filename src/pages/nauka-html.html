@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notatki HTML</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header id="top" class="header">
+      <img class="burger__menu burger--js" src="burger.png" alt="burger menu" />
+      <nav class="navigation navigation--js">
+        <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
+        <a class="navigation__link navigation__link--active" href="nauka-html.html">Nauka HTML</a>
+        <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
+        <a class="navigation__link" href="nauka-js.html">Nauka Javascript</a>
+        <a class="navigation__link" href="tools.html">Narzędzia</a>
+      </nav>
+    </header>
+    <main class="main">
+      <header class="main-heading">
+        <h1>Nauka HTML-a</h1>
+      </header>
+      <section id="notatki" class="notes">
+        <img class="notes__image" src="human_mem_html_css.jpg" alt="HTML Start fresh" />
+        <article class="notes__article">
+          <h2 class="notes__article--heading">Struktura strony HTML</h2>
+          <p>
+            Każda strona html składa się z dwóch podstawowych części:
+            <b>head</b> i <b>body</b>
+          </p>
+        </article>
+        <article class="notes__article">
+          <h2 class="notes__article--heading">Moje ulubione TAGi</h2>
+          <h3>h1</h3>
+          <p>Nagłowek tytułowy strony</p>
+        </article>
+      </section>
+    </main>
+    <footer class="footer">
+      Strona powstała w trakcie nauki kodowania stron WWW.
+      <a class="footer__link" href="#top">Wróć na górę</a>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

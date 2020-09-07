@@ -1,4 +1,5 @@
 import '../scss/main.scss';
+import moment from 'moment'
 
 // uncomment the lines below to enable PWA
 // import {registerSW} from './pwa.js';
@@ -7,6 +8,7 @@ import '../scss/main.scss';
 /* place your code below */
 
 console.log('HELLO 🚀')
+console.log(moment().format('dddd MMMM YYYY, hh:mm:ss'));
 
 const burgerButton = document.querySelector(".burger--js"); //tworze zmienna podłączoną do ikony hamburgera
 

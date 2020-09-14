@@ -1,4 +1,4 @@
-![cover]
+![cover](src\assets\img\myHomepage.png)
 
 # My first homepage
 

@@ -1,4 +1,4 @@
-![cover](src\assets\img\myHomepage.png)
+![cover](./src/assets/img/myHomepage.png)
 
 # My first homepage
 
@@ -17,10 +17,10 @@ It's my first homepage containing my start of fronted coding.
 
 ## Used technology:
 
-- `Javascript`
-- `SCSS`
-- `WTF Webpack Starter Kit`
-- `Node.js`
+> Javascript
+> SCSS
+> WTF Webpack Starter Kit
+> Node.js
 
 
 

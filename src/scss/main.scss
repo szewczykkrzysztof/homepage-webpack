@@ -35,6 +35,19 @@ body {
   }
 }
 
+.animation__example {
+  color: hsl(261, 71%, 15%);
+  font-size: 28px;
+  font-weight: bold;
+  transition: all 1s ease-in-out; //definiuje przejscie pomiędzy klasą bazową, a hover
+  &:hover {
+    color: hsl(320,70,35);
+    transform: scale(3);
+    
+    }
+}
+
+
 .footer {
   background: #3f3f3f;
   color: white;

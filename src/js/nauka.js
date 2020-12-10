@@ -1,3 +1,5 @@
+import { polishDate } from "./modules/daysFunctions.js";
+
 const firstName = "Krzysiek";
 const age = 42;
 console.log(`Mam na imię ${firstName} i mam ${age} lata`);
@@ -12,7 +14,7 @@ function myName(name, age) {
 }
 
 function calculate(number) {
-  square = number * number;
+  var square = number * number;
   return `Kwadrat liczby ${number} to ${square}`;
 }
 
@@ -32,3 +34,5 @@ burgerButton.addEventListener("click", () => {
   console.log(topMenu);
   topMenu.classList.toggle("navigation--mobile");
 });
+
+polishDate("2006-12-03");

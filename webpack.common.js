@@ -98,7 +98,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/nauka-js.html",
       inject: true,
-      chunks: ["burger"],
+      chunks: ["burger", "nauka"],
       filename: "nauka-js.html",
     }),
     new HtmlWebpackPlugin({

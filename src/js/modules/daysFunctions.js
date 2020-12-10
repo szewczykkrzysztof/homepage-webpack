@@ -11,13 +11,16 @@ export function polishWeekDay(entryDate) {
 
 // funkcja zwracająca polską datę w formacie DzieńTygodania, DD-MM-RRRR
 export function polishDate(entryDate) {
-  var inputDate = new Date(entryDate);
-var options = {
-  day: "numeric",
-  year: "numeric",
-  weekday: 'long',
-  month: 'long'
-}
-var polishFullDate = Intl.DateTimeFormat('pl', options).format(inputDate);
-console.log(polishFullDate);
+  if (entryDate) {
+  } else {
+    var inputDate = new Date();
+  }
+  var options = {
+    day: "numeric",
+    year: "numeric",
+    weekday: "long",
+    month: "long",
+  };
+  var polishFullDate = Intl.DateTimeFormat("pl-PL", options).format(inputDate);
+return polishFullDate;
 }

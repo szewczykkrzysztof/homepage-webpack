@@ -107,5 +107,11 @@ module.exports = {
       chunks: ["burger"],
       filename: "tools.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/about-me.html",
+      inject: true,
+      chunks: ["burger"],
+      filename: "about-me.html",
+    }),
   ],
 };

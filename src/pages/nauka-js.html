@@ -8,12 +8,20 @@
 
   <body>
     <header class="header">
-      <img class="burger__menu burger--js" src="../assets/img/burger.png" alt="burger menu" />
+      <img
+        class="burger__menu burger--js"
+        src="../assets/img/burger.png"
+        alt="burger menu"
+      />
       <nav class="navigation navigation--js">
-        <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
+        <a class="navigation__link navigation__link--homepage" href="index.html"
+          >Strona główna</a
+        >
         <a class="navigation__link" href="nauka-html.html">Nauka HTML</a>
         <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
-        <a class="navigation__link navigation__link--active" href="nauka-js.html"
+        <a
+          class="navigation__link navigation__link--active"
+          href="nauka-js.html"
           >Nauka Javascript</a
         >
         <a class="navigation__link" href="tools.html">Narzędzia</a>
@@ -25,7 +33,11 @@
         <h1>Nauka Javascript</h1>
       </header>
       <section id="notatki" class="notes">
-        <img class="notes__image" src="../assets/img/js.png" alt="Javascript logo" />
+        <img
+          class="notes__image"
+          src="../assets/img/js.png"
+          alt="Javascript logo"
+        />
         <article class="notes__article">
           <h2 class="notes__article--heading">Kilka słów o Javascript</h2>
           <p>
@@ -33,26 +45,31 @@
             Jest wykonywany linijka po linijce, zadanie po zadaniu
           </p>
           <p>
-            Znacznik html, który wywołuje javascript wewnątrz html to <i>script</i><br />
-            Polecenia opakowane w ten tag umieszczamy na samym końcu strony przed tagiem <b>body</b>
+            Znacznik html, który wywołuje javascript wewnątrz html to
+            <i>script</i><br />
+            Polecenia opakowane w ten tag umieszczamy na samym końcu strony
+            przed tagiem <b>body</b>
           </p>
           <p>
-            Ponieważ plik html z kodem js rozrósł by nam się nadmiernie, lepiej kod javascriptu
-            wydzielić sobie do osobnego pliku. <br />Pliki javascript mają rozszerzenie *.js.<br />
+            Ponieważ plik html z kodem js rozrósł by nam się nadmiernie, lepiej
+            kod javascriptu wydzielić sobie do osobnego pliku. <br />Pliki
+            javascript mają rozszerzenie *.js.<br />
             Zewnętrzny plik zawierający skrypty wywołujemy dodając do znacznika
             <i>script</i> wartość
             <i>src="scieżka-do-pliku"</i>
           </p>
           <p>
-            Zmienne w JS przypisujemy za pomocą komendy <i>const = wartość</i><br />
-            Wartrości tekstowe zawieramy w ' ', natomiast liczby przypisujemy normalnie
+            Zmienne w JS przypisujemy za pomocą komendy <i>const = wartość</i
+            ><br />
+            Wartrości tekstowe zawieramy w ' ', natomiast liczby przypisujemy
+            normalnie
           </p>
         </article>
         <article class="notes__article">
           <h2 class="notes__article--heading">Literały</h2>
           <p>
-            Chcąc wykorzystać kombinację łańcuch tekstowego i zmiennych musimy skorzystać z symbolu
-            backtik (`)
+            Chcąc wykorzystać kombinację łańcuch tekstowego i zmiennych musimy
+            skorzystać z symbolu backtik (`)
           </p>
           <p>Tworzymy w ten sposób łancuch zwany literałem:</p>
           <p>`Mam na imię ${name}`</p>
@@ -60,7 +77,9 @@
         </article>
 
         <article class="notes__article">
-          <h2 class="notes__article--heading" id="polecenia">Pierwsze polecenia</h2>
+          <h2 class="notes__article--heading" id="polecenia">
+            Pierwsze polecenia
+          </h2>
           <h3 class="paragraph-heading">alert</h3>
           <p>Polecenie wywołuje wyskakujące okienko</p>
           <p>alert('Tekst napisu');</p>

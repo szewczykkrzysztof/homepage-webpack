@@ -1,5 +1,4 @@
 import '../scss/main.scss';
-import moment from 'moment';
 import { polishDate } from "./modules/daysFunctions.js";
 
 
@@ -10,7 +9,6 @@ import { polishDate } from "./modules/daysFunctions.js";
 /* place your code below */
 
 console.log('HELLO 🚀');
-console.log(moment().format('DD MMMM YYYY, hh:mm:ss'));
 
 const burgerButton = document.querySelector(".burger--js"); //tworze zmienna podłączoną do ikony hamburgera
 
@@ -26,7 +24,7 @@ burgerButton.addEventListener("click", () => {
 
 const newHeading = document.querySelector(".actionHeading--js");
 
-newHeading.innerHTML = `Witam cię na mojej stronie o godzinie ${moment().format('hh:mm')}`;
+newHeading.innerHTML = `Witam cię na mojej stronie o godzinie ${new Date().getHours()}:${new Date().getMinutes()}`;
 
 const whatDate = document.querySelector(".action--js");
 console.log(whatDate);

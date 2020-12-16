@@ -51,6 +51,17 @@ body {
   }
 }
 
+.github__repositoriesList {
+  line-height: 2;
+  letter-spacing: 1px;
+  font-size: larger;
+  // text-shadow: -1px -1px 1px lightgray;
+  a {
+    color: #353552;
+    text-decoration: none;
+  }
+}
+
 .header {
   min-height: 50px; // ustalam wysokość nagłówka aby zmieściła się ikona hamburgera
   position: fixed; // nagłówek będzie miał ustaloną pozycję i nie będzie się przewijał

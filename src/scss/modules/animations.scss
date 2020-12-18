@@ -1,0 +1,37 @@
+//definicja animacji w której tekst wjeżdża z prawej krawędzi ekranu
+@keyframes textMoving {
+  from {
+    transform: translate(100%, 0);
+  }
+  to {
+    margin-left: 20px;
+  }
+};
+
+//definuje animację, która przesuwa i obraca element o 360 stopni
+@keyframes rollingFace {
+  0% {
+  }
+  50% {
+    transform: translate(100px, 0) rotate(360deg);
+  }
+  100% {
+  }
+};
+
+.animation__example {
+  color: hsl(261, 71%, 15%);
+  font-size: 28px;
+  font-weight: bold;
+  transition: color, transform 1s ease-in-out; //definiuje przejscie pomiędzy klasą bazową, a hover
+  animation: textMoving 2s ease-in 1; //dodaje animacje z wjeżdżającym teksem z prawej strony
+  &:hover {
+    color: hsl(320, 70, 35);
+    transform: scale(3);
+  }
+};
+
+.rollingFace {
+  display: inline-block;
+  animation: rollingFace 3s ease-in-out 2; //aplikuje animację z rolującą buźką
+};

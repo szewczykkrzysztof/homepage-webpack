@@ -1,3 +1,5 @@
+import { polishDate } from "./modules/daysFunctions.js";
+
 const firstName = "Krzysiek";
 const age = 42;
 console.log(`Mam na imię ${firstName} i mam ${age} lata`);
@@ -12,7 +14,7 @@ function myName(name, age) {
 }
 
 function calculate(number) {
-  square = number * number;
+  var square = number * number;
   return `Kwadrat liczby ${number} to ${square}`;
 }
 
@@ -22,13 +24,4 @@ console.log(myName(firstName, age));
 
 console.log(myName("Tymon", 48));
 
-const burgerButton = document.querySelector(".burger--js"); //tworze zmienna podłączoną do ikony hamburgera
-
-/*przypisuję do przycisku akcję na klik
-tworzę zmienną zawierającą nawigację*/
-
-burgerButton.addEventListener("click", () => {
-  const topMenu = document.querySelector(".navigation--js");
-  console.log(topMenu);
-  topMenu.classList.toggle("navigation--mobile");
-});
+polishDate("2006-12-03");

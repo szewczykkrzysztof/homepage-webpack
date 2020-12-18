@@ -2,13 +2,15 @@
 
 // @import "_variables";
 @import "modules/navigation.scss";
+@import "modules/animations.scss";
 
 html {
   font-size: 87, 5%;
   @media screen and (min-width: 750px) {
-          font-size: 100%;
-    }
+    font-size: 100%;
+  }
 }
+
 body {
   background: rgb(132, 165, 166);
   background: linear-gradient(
@@ -16,8 +18,9 @@ body {
     rgba(132, 165, 166, 1) 0%,
     rgba(125, 147, 147, 1) 42%,
     rgba(43, 41, 39, 0.9724264705882353) 100%
-  ); // wypełnienie tła gradientem 
+  ); // wypełnienie tła gradientem
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
 }
 
 .about-me {
@@ -44,25 +47,36 @@ body {
   border-radius: 5px;
 
   &__link {
-    color: inherit; // link przejmuje kolor rodzica 
+    color: inherit; // link przejmuje kolor rodzica
+  }
+}
+
+.github__repositoriesList {
+  line-height: 2;
+  letter-spacing: 1px;
+  font-size: larger;
+  // text-shadow: -1px -1px 1px lightgray;
+  a {
+    color: #353552;
+    text-decoration: none;
   }
 }
 
 .header {
-  min-height: 50px; // ustalam wysokość nagłówka aby zmieściła się ikona hamburgera 
-  position: fixed; // nagłówek będzie miał ustaloną pozycję i nie będzie się przewijał 
-  top: 0; // będzie przyklejony do góry okienka 
-  width: 100%; // na szerokośc całego okna 
+  min-height: 50px; // ustalam wysokość nagłówka aby zmieściła się ikona hamburgera
+  position: fixed; // nagłówek będzie miał ustaloną pozycję i nie będzie się przewijał
+  top: 0; // będzie przyklejony do góry okienka
+  width: 100%; // na szerokośc całego okna
   background-color: 3b3b3d;
   display: block;
   margin: 0 auto;
 }
 
 .main {
-  margin: 55px auto 0; // odsuwam treść poniżej nagłówka 
+  margin: 55px auto 0; // odsuwam treść poniżej nagłówka
   @media screen and (min-width: 750px) {
-          width: 95%;
-    }
+    width: 95%;
+  }
 }
 
 .main-heading {
@@ -86,7 +100,7 @@ body {
     border: 4px solid rgb(59, 55, 55);
     border-left: 1px solid black;
     border-top: 1px solid black;
-    padding: 5px;
+    padding: 5px 10px;
     margin: 5px 0 0;
     border-radius: 5px;
     background-color: whitesmoke;
@@ -94,8 +108,9 @@ body {
 
   &__article--heading {
     color: #353552;
-    &::before { //Tworzę pseudoelement przed każdym tytułem artykułu w kształcie kółka, & tworzy kolejne zagnieżdżenie klasy
-      content: '';
+    &::before {
+      //Tworzę pseudoelement przed każdym tytułem artykułu w kształcie kółka, & tworzy kolejne zagnieżdżenie klasy
+      content: "";
       display: inline-block; // element będzie się zachowywał jak wewnątrz jak block, ale sam będzie pozycjonowany jak liniowy
       width: 16px;
       height: 16px;
@@ -112,17 +127,17 @@ body {
   &__image {
     display: block;
     border-radius: 25px;
-    margin: 0 auto; // wyśrodkowuje obraz horyzontalnie 
+    margin: 0 auto; // wyśrodkowuje obraz horyzontalnie
     max-width: 100%; // skaluje obraz w dół, jeśli przekracza szerokość okna
   }
   @media screen and (min-width: 750px) {
-      display: grid; // tworzę kontener na zawartości bloku notatki
-      grid-template-columns: repeat(
-        2,
-        1fr
-      ); // ustanawiam 2 rzędy, każdy z nich wypełnia dostępną przestrzeń (tu po 1/2)
-      gap: 16px; // ustawiam odstępy pomiędzy kolumnami i rzędami
-    }
+    display: grid; // tworzę kontener na zawartości bloku notatki
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); // ustanawiam 2 rzędy, każdy z nich wypełnia dostępną przestrzeń (tu po 1/2)
+    gap: 16px; // ustawiam odstępy pomiędzy kolumnami i rzędami
+  }
 }
 
 .notes__image {

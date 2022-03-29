@@ -26,7 +26,7 @@
   transition: color, transform 1s ease-in-out; //definiuje przejscie pomiędzy klasą bazową, a hover
   animation: textMoving 2s ease-in 1; //dodaje animacje z wjeżdżającym teksem z prawej strony
   &:hover {
-    color: hsl(320, 70, 35);
+    color: hsl(320, 70%, 35%);
     transform: scale(3);
   }
 };
